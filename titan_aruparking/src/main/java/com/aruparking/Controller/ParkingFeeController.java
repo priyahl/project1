@@ -22,7 +22,7 @@ public class ParkingFeeController {
 	public ParkingFeeDTO addFee(@RequestBody ParkingFeeDTO parkingFee) {
 		return parkingFeeService.addParkingFee(parkingFee);
 	}
-	//get mapping
+	
 	@GetMapping("/allfee")
 	public List<ParkingFeeDTO> getFeeDetail(){
 		return parkingFeeService.getAllFees();
